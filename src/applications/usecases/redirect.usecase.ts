@@ -1,4 +1,4 @@
-import { Config } from 'src/utility/constant/config';
+import { Config } from '../../utility/constant/config';
 import { Injectable } from '@nestjs/common';
 import { UnMinifyURLUseCase } from './unminifyURL.usecase';
 

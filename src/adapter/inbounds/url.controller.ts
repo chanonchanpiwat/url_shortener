@@ -5,7 +5,6 @@ import {
   HttpStatus,
   Param,
   Post,
-  Redirect,
   Res,
 } from '@nestjs/common';
 import {
@@ -32,7 +31,6 @@ export class URLController {
   }
 
   @Get('/:minifiedURL')
-  @Redirect()
   async redirectToUrl(
     @Param('minifiedURL') minifiedURL: string,
     @Res() res: Response,
