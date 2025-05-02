@@ -11,7 +11,7 @@ describe('UnMinifyURLUseCase', () => {
   });
 
   it('should unminify url', async () => {
-    const minifiedURL = 'abc';
+    const minifiedURL = 'www.minify/abW1k2';
 
     await unMinifyURLUseCase.queryOriginalURL(minifiedURL);
     expect(urlRepository.findOneById).toHaveBeenCalledWith(minifiedURL);
